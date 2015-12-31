@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- (c) Mohammad Fadavi (mfadavi@mfadavi.ir) -->
+
+<!-- TEMPLATES:
+  --
+  -- 1. عنوان:
+  -- <tr id="{Title-ID}">
+  -- 	<td><hr></td>
+  --    <td><a href="#{Title-ID}"><h2>{Title}</h2></a></td>
+  -- </tr>
+  --
+  -- 2. ردیف عادی:
+  -- <tr>
+  -- 	<td>{Something}</td>
+  -- 	<td>{Description}</td>
+  -- </tr>
+  --
+  -- 3. شماره پانویس در متن:
+  -- <sup><a href="#pn{N}"><strong>({N})</strong></a></sup>
+  --
+  -- 4. پانویس:
+  -- <h6 id="pn{N}">
+  -- 	<strong>({N}):</strong> {Text}
+  -- </h6>
+  -->
+
+<html lang="fa">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Your Name">
+        <meta name="keywords" content="resume,cv,رزومه,کارنامک,Your Name,نام شما">
+        <meta name="description" content="Some Description">
+        <title>نام شما | کارنامک</title>
+        
+<style>@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);*{font-family:'Droid Arabic Naskh',serif;direction:rtl}body{margin:1em}.ltr{direction:ltr}table tr td:first-child{color:dimgray;font-style:italic}table h2,.symbol{color:#4574bf}a,a:visited{color:inherit}table tr td hr{border:none;height:.5em;color:#4574bf;background-color:#4574bf}a{text-decoration:none}a:hover{text-decoration:underline}</style>
+    </head>
+    <body lang="fa" dir="rtl">
+        <div>
+            <div style="width: 50%; float: right">
+                <a href="#"><h1 style="font-size: 2em">نام شما</h1></a>
+                <h2 style="font-size: 1em; color: gray; font-style: italic">آخرین ویرایش: فروردین ۱۳۹۳</h2>
+            </div>
+            <div style="width: 50%; float: left">
+                <h3 class="ltr">
+                    <span class="symbol">&#128222;</span>
+                    +98-912 345 67 89
+                    <br>
+                    <span class="symbol">&#128387;</span>
+                    <a href="mailto:example@example.com">example@example.com</a>
+                    <br>
+                    <span class="symbol">&#127758;</span>
+                    <a href="http://example.com">وبسایت شخصی</a>
+                </h3>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <hr>
+        <table style="border-spacing: 10px; border-collapse: separate">
+            <tr id="عنوان-آزمایشی۱">
+                <td><hr></td>
+                <td><a href="#عنوان-آزمایشی۱"><h2>عنوان آزمایشی ۱</h2></a></td>
+            </tr>
+            <tr>
+                <td>موضوع ۱</td>
+                <td>شرح ۱</td>
+            </tr>
+            <tr>
+                <td>موضوع ۲</td>
+                <td>شرح ۲</td>
+            </tr>
+            <tr>
+                <td>موضوع ۳</td>
+                <td>
+                	شرح ۳
+                	<sup><a href="#pn1"><strong>(۱)</strong></a></sup>
+                </td>
+            </tr>
+            
+            <tr id="موضوع-آزمایشی۲">
+            	<td><hr></td>
+            	<td><a href="عنوان-آزمایشی۲"><h2>عنوان آزمایشی ۲</h2></a></td>
+            </tr>
+            <tr>
+                <td>موضوع ۴</td>
+                <td>شرح ۴</td>
+            </tr>
+            <tr>
+                <td>موضوع ۵</td>
+                <td>شرح ۵</td>
+            </tr>
+            <tr>
+                <td>موضوع ۶</td>
+                <td>شرح ۶</td>
+            </tr>
+        </table>
+        <hr>
+        
+        <!-- پانویس -->
+        <h6 id="pn1">
+            <strong>(۱):</strong>
+            متن پانویس
+        </h6>
+    </body>
+</html>
